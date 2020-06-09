@@ -1,0 +1,139 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
+[application]
+
+config/name="Half_Life_Quantum"
+config/description="Half_Life_Quantum"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Half_Life_Quantum"
+config/icon="res://icon.png"
+
+[audio]
+
+default_bus_layout="res://new_audiobuslayout.tres"
+enable_audio_input=true
+
+[compression]
+
+formats/zstd/long_distance_matching=true
+formats/zstd/compression_level=9
+formats/zstd/window_log_size=10
+formats/zlib/compression_level=9
+formats/gzip/compression_level=9
+
+[debug]
+
+settings/stdout/verbose_stdout=true
+gdscript/completion/autocomplete_setters_and_getters=true
+
+[display]
+
+window/size/width=800
+window/size/resizable=false
+window/size/borderless=true
+window/size/test_width=800
+window/size/test_height=600
+window/dpi/allow_hidpi=true
+window/vsync/vsync_via_compositor=true
+
+[editor]
+
+convert_text_resources_to_binary_on_export=true
+
+[gui]
+
+theme/use_hidpi=true
+
+[input]
+
+m_Jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
+m_forward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+m_backward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
+}
+m_left={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
+}
+m_right={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+a_shoot={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":1,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+a_openinv={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":73,"unicode":0,"echo":false,"script":null)
+ ]
+}
+a_use={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+a_flashlight={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
+ ]
+}
+m_crouch={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777238,"unicode":0,"echo":false,"script":null)
+ ]
+}
+a_aimdownsights={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":2,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[logging]
+
+file_logging/enable_file_logging=true
+file_logging/log_path="user://Half_Life_Quantum/logs/log.txt"
+file_logging/max_log_files=1
+
+[physics]
+
+3d/physics_engine="Bullet"
+
+[rendering]
+
+quality/driver/fallback_to_gles2=true
+quality/2d/gles2_use_nvidia_rect_flicker_workaround=true
+quality/2d/use_pixel_snap=true
+threads/thread_model=2
+quality/shadows/filter_mode=2
+quality/filters/use_nearest_mipmap_filter=true
+quality/subsurface_scattering/quality=2
+quality/subsurface_scattering/follow_surface=true
+quality/voxel_cone_tracing/high_quality=true
+environment/default_environment="res://default_env.tres"
