@@ -36,7 +36,6 @@ formats/gzip/compression_level=9
 
 [debug]
 
-settings/stdout/verbose_stdout=true
 gdscript/completion/autocomplete_setters_and_getters=true
 
 [display]
